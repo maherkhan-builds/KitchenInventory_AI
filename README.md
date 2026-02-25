@@ -126,43 +126,46 @@ Each scanned inventory item should include:
 
 ---
 
-## 📦 Output Format (JSON)
-Your app must output valid JSON structured exactly like this:
+## 🧾 Implementation Guidelines
 
-```json
-{
-  "meal_plans": [
-    {
-      "plan_name": "string",
-      "meals": [
-        {
-          "recipe_name": "string",
-          "ingredients": [
-            {
-              "name": "string",
-              "quantity": "string",
-              "expiry_date": "string",
-              "image_url": "string (optional)",
-              "nutrition": {
-                "calories": 0,
-                "macros": { "protein": 0, "carbs": 0, "fat": 0 }
-              }
-            }
-          ],
-          "instructions": "string",
-          "estimated_sustainability_index": {
-            "score": 0,
-            "method": "string"
-          }
-        }
-      ],
-      "overall_sustainability_score": 0
-    }
-  ],
-  "errors": [
-    {
-      "item": "string",
-      "issue": "string"
-    }
+- **Prioritization:** Always maximize usage of near-expiry items first  
+- **Sustainability:** Rank meal plans by highest sustainability index scores  
+- **Nutrition:** Include nutritional breakdown for each recipe  
+- **Imagery:** Use image URLs for scanned items and generated meals when available  
+- **Error Handling:** Exclude items with missing or invalid expiry dates and log them clearly in the `errors[]` array  
+
+---
+
+## ⏱ Time to Build
+
+~30–45 minutes (concept → working prototype)
+
+---
+
+## 🎯 What I Learned
+
+Reducing food waste is not a motivation problem — it’s a workflow problem.
+
+When meal planning becomes expiry-aware and sustainability is visible,  
+people naturally waste less 🌍✅
+
+---
+
+## ✅ Summary
+
+**KitchenInventory_AI** helps urban families cut food waste by scanning groceries, prioritizing near-expiry items, generating smart recipes, and ranking meal plans using an AI sustainability index — with nutrition insights and built-in error handling.
+
+---
+
+## 🔗 Follow the Journey
+
+Instagram: https://www.instagram.com/social.icm/  
+TikTok: https://www.tiktok.com/@social_media_coach  
+LinkedIn: https://www.linkedin.com/in/mahersocialmediastrategistus/  
+GitHub: https://github.com/maherkhan-builds  
+
+---
+
+Building one AI app per day using vibe-coding, focused on one industry problem at a time.
   ]
 }
