@@ -1,0 +1,5 @@
+{
+  "name": "SmartShelf",
+  "description": "An AI-powered app to reduce food waste by scanning kitchen inventory and suggesting sustainable meal plans.",
+  "requestFramePermissions": []
+}
